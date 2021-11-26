@@ -10,7 +10,7 @@ library(lubridate)
 library(dplyr)
 library(stringr)
 library(tidyr)
-connection_string = 'mongodb+srv://Agulhas:Agulhas@cluster0.xa1nz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+connection_string = ""
 collection = mongo(collection="Users", db="Yolla", url=connection_string)
 user_base<-collection$find('{}')
 
